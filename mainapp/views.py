@@ -61,7 +61,7 @@ def contact(request):
         },
         {
             "city": "Владивосток",
-            "phone": "+7-999-999-9999",
+            "phone": "+7-999-999-8888",
             "email": "info_vladivostok@geekshop.ru",
             "address": "Близко к океану",
         },
