@@ -1,17 +1,18 @@
 import datetime
+
 from django.conf import settings
 from django.shortcuts import render
 from django.utils import timezone
 
-from .models import Product, ProductCategory, Contact
+from .models import Contact, Product, ProductCategory
 
 
 def main(request):
     title = "главная"
-    
+
     products = Product.objects.all()
 
-    content = {"title": title, "products": products, 'media_url': settings.MEDIA_URL}
+    content = {"title": title, "products": products, "media_url": settings.MEDIA_URL}
     return render(request, "mainapp/index.html", content)
 
 
